@@ -1,7 +1,7 @@
 # Tests (copy to tests/test_user_functions.py)
 import pytest
 import io
-from code import *
+from src.code import *
 
 def test_email_with_user_input_correct(monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('petra@adaltas.com'))
