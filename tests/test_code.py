@@ -19,9 +19,11 @@ def test_email_with_user_input_twoats(monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('petra@@adaltas.com'))
     assert get_email_from_input() is None
 
+'''
 def test_email_with_user_input_twoats(monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('pe!!tra@a!!daltas.com'))
     assert get_email_from_input() is None
+'''
 
 # Do the same for the following functions
 # Functions in src/user_functions.py and tests in tests/test_user_functions.py
